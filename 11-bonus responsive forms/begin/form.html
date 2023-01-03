@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/fb7f6f30e4.js"></script>
+    <script src="https://kit.fontawesome.com/4b096cff76.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Nobile:400,500|Open+Sans&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
@@ -42,68 +43,75 @@
                 <li><a href="#">Top Talent</a></li>
             </ul>
         </nav>
-       <a href="#main-menu-toggle" class="backdrop" tabindex="-1" hidden></a>
+        <a href="#main-menu-toggle" class="backdrop" tabindex="-1" hidden></a>
     </header>
 
     <main>
         <article>
             <h1>Share your resources!</h1>
-		<p>Fill out the form below to share one of your favorite layout resources.</p>
-		<form>
-			<fieldset>
-                <legend>Your contact information</legend>
-                    <label for="name">Your name </label>
-                        <input type="text" id="name" autofocus>
-                    <label for="phone">Phone number</label>
-                        <input type="tel" id="phone" placeholder="Don't forget the area code!">
-                    <label for="email">Email</label>
-                        <input type="email" id="email">
-			</fieldset>
-			<fieldset>
-				<legend>About your resource </legend>
-                    <p>What kind of resource is it?</p>
-                    <div>
-                        <label>
-                            <input type="radio" name="resource" value="written" checked> Written article 
-                        </label>
-                        <label>
-                            <input type="radio" name="resource" value="podcast"> Podcast
-                        </label>
-                        <label>
-                            <input type="radio" name="resource" value="video"> Video 
-                        </label>
-                        <label>
-                            <input type="radio" name="resource" value="conference"> Conference
-                        </label>
-                        <label>
-                            <input type="radio" name="resource" value="other"> Some other type
-                        </label>
-
-					<label for="rating">How would you rate this resource?</label>
-						<select id="rating">
-							<option selected>Select one...</option>
-							<option value="5star">Amazing, 5 stars</option>
-							<option value="4star">Helpful, 4 stars</option>
-							<option value="3star">OK, 3 stars</option>
+            <p>Fill out the form below to share one of your favorite layout resources.</p>
+            <form>
+                <fieldset>
+                    <legend>Your contact information</legend>
+                    <div class="container">
+                        <label for="name" class="flexItem1">Your name </label>
+                        <input type="text" id="name" autofocus class="flexItem2">
+                        <label for="phone" class="flexItem1">Phone number</label>
+                        <input type="tel" id="phone" placeholder="Don't forget the area code!" class="flexItem2">
+                        <label for="email" class="flexItem1">Email</label>
+                        <input type="email" id="email" class="flexItem2">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>About your resource </legend>
+                    <div class="container">
+                        <p class="flexItem1">What kind of resource is it?</p>
+                        <div class="flexItem2">
+                            <label>
+                                <input type="radio" name="resource" value="written" checked> Written article
+                            </label>
+                            <label>
+                                <input type="radio" name="resource" value="podcast"> Podcast
+                            </label>
+                            <label>
+                                <input type="radio" name="resource" value="video"> Video
+                            </label>
+                            <label>
+                                <input type="radio" name="resource" value="conference"> Conference
+                            </label>
+                            <label>
+                                <input type="radio" name="resource" value="other"> Some other type
+                            </label>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <label for="rating" class="flexItem1">How would you rate this resource?</label>
+                        <select id="rating" class="flexItem2">
+                            <option selected>Select one...</option>
+                            <option value="5star">Amazing, 5 stars</option>
+                            <option value="4star">Helpful, 4 stars</option>
+                            <option value="3star">OK, 3 stars</option>
                             <option value="2star">Avoid if you can, 2 stars</option>
                             <option value="1star">Pitiful, 1 star</option>
                         </select>
-					<label for="comments">Other details or comments:</label>
-						<textarea id="comments"></textarea>
-					<label>
-						<input id="subscribe" type="checkbox" value="subscribe">Add me to your email list
-					</label>				
-
-					<button type="submit">Submit</button>
-				</fieldset>
-			</form>
+                    </div>
+                    <div class="container">
+                        <label for="comments" class="flexItem1">Other details or comments:</label>
+                        <textarea id="comments" class="flexItem2"></textarea>
+                    </div>
+                    <label>
+                        <input id="subscribe" type="checkbox" value="subscribe">Add me to your email list
+                    </label>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
         </article>
         <aside>
             <h3>Talk to us!</h3>
             <i class="fas fa-comments"></i>
             <address>Frontend Masters<br>
                 Minneapolis, MN</address>
-             <p>Email: support@frontendmasters.com</p>
+            <p>Email: support@frontendmasters.com</p>
             <p><a href="https://www.frontendmasters.com" target="_blank" class="button">Visit our website</a></p>
         </aside>
     </main>
