@@ -112,10 +112,12 @@ section,
         --width: 3;
         order: 4;
     }
-    #inside article {
+    #inside article,
+    #inside #table article {
         --width: 12;
     }
-    #inside aside {
+    #inside aside,
+    #inside #table aside {
         --width: 4;
     }
 }

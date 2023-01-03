@@ -24,11 +24,11 @@ small, .text_small {font-size: calc(var(--base-size) / var(--type-scale));}
 
 @media (min-width: 480px) {
   :root {
-    --type-scale: 1.2;
+    --type-scale: 1.16;
   }
 }
 @media (min-width: 768px) {
   :root {
-    --type-scale: 1.25;
+    --type-scale: 1.2;
   }
 }
